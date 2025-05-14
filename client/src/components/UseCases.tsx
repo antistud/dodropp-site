@@ -3,37 +3,46 @@ import { motion } from "framer-motion";
 const useCases = [
   {
     title: "Friend Trip Planning! 🏖️",
-    description: "Planning a weekend getaway or road trip? Create a DoDropp list that auto-assigns everyone different tasks, from booking hotels to making the perfect playlist!",
+    description: "Planning a weekend getaway? Create a DoDropp list with photo tasks to share vacation spot ideas, file uploads for reservations, and text input tasks to gather everyone's availability!",
     image: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     alt: "Friends on a road trip",
-    tags: ["Travel Planning", "Packing Lists", "Road Trip Essentials"],
+    tags: ["Photo Tasks", "File Sharing", "Text Inputs"],
     tagColor: "bg-primary/20 text-primary",
     emoji: "🚗"
   },
   {
     title: "Game Night Squad! 🎲",
-    description: "Use DoDropp to organize your weekly game nights - from who's bringing which games to snack assignments that rotate automatically each week!",
+    description: "Use DoDropp to organize weekly game nights with text input tasks for food preferences, photo tasks to share game options, and automated task assignments that rotate snack duty each week!",
     image: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     alt: "Friends playing board games",
-    tags: ["Game Rotation", "Snack Schedule", "Player Coordination"],
+    tags: ["Text Responses", "Automated Rotation", "Photo Sharing"],
     tagColor: "bg-secondary/20 text-secondary",
     emoji: "🎮"
   },
   {
+    title: "Book Club Organizer! 📚",
+    description: "Keep your book club on the same page with file upload tasks for sharing PDFs, text input for discussion questions, and photo tasks for sharing reading nooks or favorite coffee shops!",
+    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    alt: "Book club meeting",
+    tags: ["Document Sharing", "Discussion Questions", "Reading Lists"],
+    tagColor: "bg-violet-100 text-violet-700",
+    emoji: "📖"
+  },
+  {
     title: "Family Vacation Magic! ✨",
-    description: "Create packing lists for the whole family that adapt based on destination - beach gear appears automatically for coastal trips, and snow gear for mountain stays!",
+    description: "Create packing lists with photo tasks to show exactly which items to bring, file uploads for important travel documents, and text inputs to gather everyone's activity preferences!",
     image: "https://images.unsplash.com/photo-1607582544916-f9d71a0a6ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     alt: "Family on vacation",
-    tags: ["Family Organization", "Trip Planning", "Packing Help"],
+    tags: ["Visual Packing Lists", "Document Storage", "Activity Planning"],
     tagColor: "bg-accent/20 text-accent-foreground",
     emoji: "🧳"
   },
   {
-    title: "Sports Team Scheduler! ⚽",
-    description: "Coordinate your recreational sports team with practice reminders, game schedules, and automatic equipment assignments for each player!",
+    title: "Sports Team Organizer! ⚽",
+    description: "Coordinate your team with photo tasks for field layouts, file uploads for permission slips, and automated rotation of who brings refreshments to each game!",
     image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     alt: "Recreational sports team",
-    tags: ["Practice Reminders", "Equipment Tracking", "Game Planning"],
+    tags: ["Image Sharing", "Document Collection", "Automated Assignments"],
     tagColor: "bg-green-100 text-green-800",
     emoji: "🏆"
   }

@@ -6,9 +6,12 @@ import { Link } from "wouter";
 const freePlanFeatures = [
   { name: "Up to 5 custom lists for all your activities", included: true },
   { name: "Unlimited tasks on each list", included: true },
+  { name: "Basic task types (checkbox and text)", included: true },
   { name: "Smart tags to organize your items", included: true },
   { name: "Share with friends via simple links", included: true },
+  { name: "Photo upload tasks (limit: 5 per list)", included: true },
   { name: "Magic automation rules ✨", included: false },
+  { name: "Advanced task types (file uploads, etc.)", included: false },
   { name: "Tasks that create other tasks automatically", included: false }
 ];
 
@@ -16,8 +19,11 @@ const freePlanFeatures = [
 const proPlanFeatures = [
   { name: "Unlimited lists for all your adventures", included: true },
   { name: "Unlimited tasks per list", included: true },
+  { name: "All task types (photos, files, text input)", included: true },
   { name: "Super-powered tagging system", included: true },
   { name: "Share with privacy controls for your squad", included: true },
+  { name: "Unlimited photo uploads in tasks", included: true },
+  { name: "File uploads up to 100MB per task", included: true },
   { name: "Magic automation rules ✨", included: true },
   { name: "Tasks that trigger other tasks automatically", included: true },
   { name: "Fast & friendly help when you need it", included: true }

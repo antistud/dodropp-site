@@ -16,6 +16,13 @@ const features = [
     iconColor: "text-secondary"
   },
   {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 8h.01M12 3c-1.86 0-3.2.11-4.03.43a4.5 4.5 0 0 0-2.53 2.53C5.1 6.8 5 8.14 5 10c0 1.86.11 3.2.43 4.03a4.5 4.5 0 0 0 2.53 2.53c.83.33 2.17.44 4.03.44 1.86 0 3.2-.11 4.03-.43a4.5 4.5 0 0 0 2.53-2.53c.33-.83.44-2.17.44-4.03 0-1.86-.11-3.2-.43-4.03a4.5 4.5 0 0 0-2.53-2.53C15.2 3.11 13.86 3 12 3z"/><path d="M19 15v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-2"/><path d="M12 16v3"/><path d="m9 18 3 3 3-3"/></svg>,
+    title: "Snap & Share Photos! 📸",
+    description: "Add photos to your tasks to show exactly what you need or capture completed tasks with visual proof!",
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-500"
+  },
+  {
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2H2v10h10V2Z"/><path d="M22 12h-10v10h10V12Z"/><path d="M12 12H2v10h10V12Z"/><path d="M22 2h-10v10h10V2Z"/></svg>,
     title: "Lists for Everything! 📝",
     description: "Separate lists for your soccer team, party planning, game night, weekend trips - all in one place!",
@@ -23,16 +30,30 @@ const features = [
     iconColor: "text-accent-foreground"
   },
   {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H4"/><path d="M14 2v6h6"/><path d="M10 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1"/><path d="M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1"/></svg>,
+    title: "Custom Text Responses! 💬",
+    description: "Create text input tasks that collect responses from your group - perfect for gathering ideas or preferences!",
+    bgColor: "bg-violet-100",
+    iconColor: "text-violet-500"
+  },
+  {
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m21.4 15-2.1-2.1m-3.3-3.2-2.1-2.2m-3.3-3.2-2.1-2.1M3.8 3.8l16.4 16.4" /><path d="m17.7 17.7-2.1-2.1m-3.3-3.3-2.2-2.1m-3.2-3.3-2.1-2.1M18.2 6.2l-1.4-1.4m-3.3-3.3 2.1 2.1" /></svg>,
-    title: "Fun Tagging System 🏷️",
+    title: "Smart Tagging System 🏷️",
     description: "Tag things like #MovieNight or #BeachTrip to find all your related tasks super fast!",
     bgColor: "bg-pink-100",
     iconColor: "text-pink-500"
   },
   {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/><path d="m5 15-3 3 3 3"/><path d="m19 15 3 3-3 3"/><path d="m3 7 3-3 3 3"/><path d="m15 7 3-3 3 3"/></svg>,
+    title: "File Upload Tasks! 📁",
+    description: "Share documents, spreadsheets, and files right within your tasks - great for event planning or group projects!",
+    bgColor: "bg-amber-100",
+    iconColor: "text-amber-500"
+  },
+  {
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>,
     title: "See Your Progress! 📈",
-    description: "Watch your group's to-do list shrink with cool tracking features - perfect for roommates splitting chores!",
+    description: "Watch your group's to-do list shrink with interactive tracking features - perfect for roommates splitting chores!",
     bgColor: "bg-green-100",
     iconColor: "text-green-500"
   },

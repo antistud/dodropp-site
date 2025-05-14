@@ -8,12 +8,20 @@ const faqs = [
     answer: "DoDropp is like a magical checklist that practically runs itself! ✨ While other apps are either too basic or way too complicated, DoDropp hits the sweet spot. You can share lists with your friends with a simple link (they don't even need to sign up!), and our powerful automation features make tasks appear, disappear, or assign themselves automatically - it's like having a checklist with superpowers!"
   },
   {
+    question: "📸 What kinds of task types can I create with DoDropp?",
+    answer: "DoDropp goes way beyond basic checkboxes! You can create regular tasks, photo tasks (upload an image of that perfect camping spot), text response tasks (gather everyone's food preferences), file upload tasks (share documents for your book club), and even tasks with automated dependencies. Each task type is designed to make group planning more interactive and useful!"
+  },
+  {
     question: "👥 Can my friends use my lists without signing up?",
     answer: "Absolutely! That's what makes DoDropp so awesome for friend groups! 🎯 When you create a list, you get a magic link to share with anyone. Your friends can check things off and add comments without creating an account or downloading anything. If they love it (and we bet they will!), they can sign up to create their own personalized lists!"
   },
   {
     question: "✨ What kind of powerful automation options can I set up?",
     answer: "With our Pro Magic plan, you can create all sorts of intelligent automations! 🪄 For example: schedule tasks to appear before your weekend camping trip, create task chains (when someone marks 'Buy snacks' complete, 'Bring napkins' automatically gets assigned to someone else), set up recurring reminders for your weekly game night, or even have tasks auto-complete when others are done. It's like training your checklist to be your personal assistant!"
+  },
+  {
+    question: "📁 Can I use DoDropp for sharing files with my group?",
+    answer: "Yes! With our file upload tasks, you can easily attach documents, spreadsheets, PDFs, or other files right to specific tasks. This is perfect for sharing reading materials with your book club, distributing event flyers to your sports team, or collecting photos from your group vacation. Everyone with access to the list can view or download the files!"
   },
   {
     question: "👪 How many people can use a shared list?",
