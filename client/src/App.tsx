@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Pricing from "@/pages/Pricing";
+import HowItWorksPage from "@/pages/HowItWorks";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/pricing" component={Pricing} />
+        <Route path="/how-it-works" component={HowItWorksPage} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

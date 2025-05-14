@@ -36,7 +36,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-8">
             {[
               { name: "✨ Features", href: "/#features" },
-              { name: "🪄 How It Works", href: "/#how-it-works" },
+              { name: "🪄 How It Works", href: "/how-it-works" },
               { name: "💸 Pricing", href: "/pricing" },
               { name: "❓ FAQ", href: "/#faq" }
             ].map((item, index) => (
@@ -98,7 +98,7 @@ export default function Header() {
             <div className="flex flex-col space-y-4 px-4">
               {[
                 { name: "✨ Features", href: "/#features" },
-                { name: "🪄 How It Works", href: "/#how-it-works" },
+                { name: "🪄 How It Works", href: "/how-it-works" },
                 { name: "💸 Pricing", href: "/pricing" },
                 { name: "❓ FAQ", href: "/#faq" }
               ].map((item, index) => (

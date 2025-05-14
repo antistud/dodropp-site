@@ -81,7 +81,7 @@ export default function HowItWorks() {
         </div>
         
         <motion.div 
-          className="text-center mt-16"
+          className="text-center mt-16 flex flex-col md:flex-row items-center justify-center gap-6"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -93,6 +93,15 @@ export default function HowItWorks() {
             whileTap={{ scale: 0.95 }}
           >
             Try It Now - It's Free! 🎉
+          </motion.a>
+          
+          <motion.a 
+            href="/how-it-works" 
+            className="inline-block px-8 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary/10 transition"
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            See Detailed Guide
           </motion.a>
         </motion.div>
       </div>
