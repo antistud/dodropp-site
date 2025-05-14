@@ -38,7 +38,7 @@ export default function Header() {
               { name: "✨ Features", href: "/#features" },
               { name: "🪄 How It Works", href: "/how-it-works" },
               { name: "💸 Pricing", href: "/pricing" },
-              { name: "❓ FAQ", href: "/#faq" }
+              { name: "❓ FAQ", href: "/faq" }
             ].map((item, index) => (
               <Link key={index} href={item.href}>
                 <motion.a 
@@ -100,7 +100,7 @@ export default function Header() {
                 { name: "✨ Features", href: "/#features" },
                 { name: "🪄 How It Works", href: "/how-it-works" },
                 { name: "💸 Pricing", href: "/pricing" },
-                { name: "❓ FAQ", href: "/#faq" }
+                { name: "❓ FAQ", href: "/faq" }
               ].map((item, index) => (
                 <Link key={index} href={item.href}>
                   <motion.a 
