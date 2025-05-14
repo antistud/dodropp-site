@@ -19,7 +19,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-              DoDropp turns ordinary to-do lists into magical, self-organizing adventures! ✨ Share one link with your friends, set up powerful automations, and watch your group tasks complete themselves - from game nights to road trips!
+              Share one link. Add photos, files, and text responses. Watch tasks complete themselves. ✨
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <motion.div whileHover={{ y: -5, rotate: -1, scale: 1.03, boxShadow: "0 15px 30px -5px rgba(147, 51, 234, 0.5)" }}>
