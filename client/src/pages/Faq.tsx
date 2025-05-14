@@ -116,7 +116,7 @@ export default function FaqPage() {
       },
       {
         question: "Can I export my data from DoDropp?",
-        answer: "Yes! You can export any list as a CSV file that opens in Excel, Google Sheets, or any spreadsheet program. This makes it easy to back up your data, print physical copies, or transfer information to other systems if needed. Pro Magic users also get the option to export in additional formats like PDF with formatted layouts."
+        answer: "Currently, DoDropp doesn't offer a built-in export feature. We're prioritizing core functionality first to ensure the best possible user experience. However, we're planning to add data export capabilities in a future update, which will allow you to download your lists as CSV files for use in Excel or Google Sheets. This feature is on our roadmap as we continue to develop and expand the platform based on user feedback."
       },
       {
         question: "What browsers and devices does DoDropp support?",
