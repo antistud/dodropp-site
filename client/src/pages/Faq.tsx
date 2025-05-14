@@ -22,7 +22,7 @@ export default function FaqPage() {
     "General": [
       {
         question: "What makes DoDropp different from other checklist apps?",
-        answer: "DoDropp is designed specifically for group collaboration with a focus on automation. While other apps are either too basic or overly complex, DoDropp hits the sweet spot with features like magical share links (no sign-up needed for participants), powerful automation rules, and multiple task types including photos, files, and text responses. It's perfect for friend groups, families, and hobby clubs who need something more than basic checklists but don't want complex project management software."
+        answer: "DoDropp is designed specifically for group collaboration with a focus on simplicity and flexibility. While other apps are either too basic or overly complex, DoDropp hits the sweet spot with features like magical share links (no sign-up needed for participants) and multiple task types including photos, files, and text responses. It's perfect for friend groups, families, and hobby clubs who need something more than basic checklists but don't want complex project management software."
       },
       {
         question: "Is DoDropp suitable for professional teams and businesses?",
@@ -40,11 +40,11 @@ export default function FaqPage() {
     "Account & Pricing": [
       {
         question: "How much does DoDropp cost?",
-        answer: "DoDropp offers a free plan that includes up to 5 custom lists, unlimited tasks per list, basic task types, and simple sharing. For more advanced features, our Pro Magic plan is just $3/month and includes unlimited lists, all task types (photos, files, text inputs), custom permissions, and powerful automation rules."
+        answer: "DoDropp offers a free plan that includes up to 5 custom lists, unlimited tasks per list, basic task types, and simple sharing. For more advanced features, our Pro Magic plan is just $3/month and includes unlimited lists, all task types (photos, files, text inputs), and custom sharing permissions to control who can view or edit your lists."
       },
       {
         question: "Can I try the Pro features before subscribing?",
-        answer: "The free plan gives you a good taste of what DoDropp can do! While some advanced features like automation rules and special task types are Pro-only, you can still create lists, share them, and organize basic tasks. This lets you experience the core functionality before deciding if the Pro Magic plan is right for your needs."
+        answer: "The free plan gives you a good taste of what DoDropp can do! While some advanced features like special task types and custom permissions are Pro-only, you can still create lists, share them, and organize basic tasks. This lets you experience the core functionality before deciding if the Pro Magic plan is right for your needs."
       },
       {
         question: "How do I switch between free and Pro plans?",
@@ -57,8 +57,8 @@ export default function FaqPage() {
     ],
     "Features": [
       {
-        question: "What are automation rules and how do they work?",
-        answer: "Automation rules are like magic spells for your tasks! They allow tasks to appear, disappear, or get assigned automatically based on triggers you set. For example, you could make a 'Buy sunscreen' task appear automatically when someone checks off 'Book beach house' on your vacation planning list. Or create a recurring game night task that rotates snack duty to a different friend each week. These rules save you tons of time and keep everyone on the same page without constant reminders."
+        question: "What are task dependencies?",
+        answer: "Task dependencies are a way to organize your checklist items in a logical sequence. While we don't currently have automation features, we do allow you to create visual groupings and sections within your lists to keep related tasks together. This helps your group see which tasks are related to each other and follow a natural progression. In the future, we plan to expand our task organization capabilities based on user feedback and needs."
       },
       {
         question: "Can I organize my lists into categories or groups?",
@@ -76,7 +76,7 @@ export default function FaqPage() {
     "Task Types": [
       {
         question: "What different types of tasks can I create with DoDropp?",
-        answer: "DoDropp goes way beyond basic checkboxes! You can create: 1) Standard checkbox tasks, 2) Photo upload tasks where people can snap and share images, 3) Text response tasks to gather ideas or preferences, 4) File upload tasks to share documents or spreadsheets, and 5) Automated tasks that trigger based on conditions. Each task type is designed to make group planning more interactive and useful."
+        answer: "DoDropp goes way beyond basic checkboxes! You can create: 1) Standard checkbox tasks, 2) Photo upload tasks where people can snap and share images, 3) Text response tasks to gather ideas or preferences, and 4) File upload tasks to share documents or spreadsheets. Each task type is designed to make group planning more interactive and useful, helping you collect exactly the information you need from your group."
       },
       {
         question: "How do photo tasks work?",
