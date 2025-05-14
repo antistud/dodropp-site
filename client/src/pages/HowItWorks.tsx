@@ -32,7 +32,7 @@ export default function HowItWorksPage() {
         "Set deadlines if needed",
         "Add a description of your goal"
       ],
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      icon: "📝",
       alt: "Creating a checklist on laptop",
       accentColor: "bg-primary text-white"
     },
@@ -46,7 +46,7 @@ export default function HowItWorksPage() {
         "Text input tasks to gather responses",
         "File upload tasks for documents and resources"
       ],
-      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      icon: "📸",
       alt: "Various task types shown on a tablet",
       accentColor: "bg-secondary text-white"
     },
@@ -60,7 +60,7 @@ export default function HowItWorksPage() {
         "Set up recurring tasks that repeat automatically",
         "Assign tasks to team members based on conditions"
       ],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      icon: "⚙️",
       alt: "Setting up automation rules",
       accentColor: "bg-violet-600 text-white"
     },
@@ -74,7 +74,7 @@ export default function HowItWorksPage() {
         "Optionally require login for edit access",
         "Track who's viewed or completed tasks"
       ],
-      image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      icon: "🔗",
       alt: "Friends collaborating on tasks",
       accentColor: "bg-amber-500 text-white"
     },
@@ -88,7 +88,7 @@ export default function HowItWorksPage() {
         "Track overall completion percentage",
         "Celebrate your group's accomplishments"
       ],
-      image: "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+      icon: "🎉",
       alt: "Group celebrating completed tasks",
       accentColor: "bg-green-600 text-white"
     }
@@ -164,17 +164,15 @@ export default function HowItWorksPage() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              {/* Image */}
+              {/* Large Emoji/Icon */}
               <div className="md:w-1/2 relative">
                 <div className={`absolute -top-4 -left-4 w-12 h-12 ${step.accentColor} rounded-full flex items-center justify-center text-xl font-bold z-10`}>
                   {step.number}
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src={step.image} 
-                    alt={step.alt} 
-                    className="w-full h-80 object-cover"
-                  />
+                <div className={`rounded-2xl overflow-hidden shadow-xl ${step.accentColor} flex items-center justify-center h-80`}>
+                  <div className="text-[10rem] leading-none">
+                    {step.icon}
+                  </div>
                 </div>
               </div>
               
