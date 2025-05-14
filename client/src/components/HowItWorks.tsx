@@ -87,7 +87,7 @@ export default function HowItWorks() {
           viewport={{ once: true }}
         >
           <motion.a 
-            href="/pricing" 
+            href="https://app.dodropp.com/" 
             className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-lg"
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}

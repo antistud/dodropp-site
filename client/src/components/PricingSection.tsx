@@ -84,7 +84,7 @@ export default function PricingSection() {
             </ul>
             
             <motion.a 
-              href="#" 
+              href="https://app.dodropp.com/" 
               className="block w-full py-3 text-center border-2 border-secondary text-secondary rounded-full font-medium hover:bg-secondary hover:text-white transition"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
@@ -139,7 +139,7 @@ export default function PricingSection() {
             </ul>
             
             <motion.a 
-              href="#" 
+              href="https://app.dodropp.com/" 
               className="block w-full py-3 text-center bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium transition shadow-md"
               whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.4)" }}
               whileTap={{ scale: 0.97 }}

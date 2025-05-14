@@ -63,7 +63,7 @@ export default function CallToAction() {
                 whileHover={{ y: -3, rotate: 2, scale: 1.03 }} 
                 whileTap={{ scale: 0.97 }}
               >
-                <a href="#" className="px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white/20 transition inline-flex items-center gap-2">
+                <a href="https://app.dodropp.com/" className="px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white/20 transition inline-flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
                   See a Quick Demo
                 </a>
