@@ -116,7 +116,7 @@ export default function PricingSection() {
                 <div className="text-4xl font-bold text-primary">$3</div>
                 <span className="text-gray-600 ml-1 mb-1">/month</span>
               </div>
-              <p className="text-gray-600">or just $24/year (like two coffees! ☕☕)</p>
+              <p className="text-gray-600">Less than a coffee! ☕</p>
             </div>
             
             <ul className="space-y-4 mb-8">
@@ -144,7 +144,7 @@ export default function PricingSection() {
               whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.4)" }}
               whileTap={{ scale: 0.97 }}
             >
-              Get Magical Powers! ✨
+              Start Monthly Plan - $3/month ✨
             </motion.a>
           </motion.div>
         </div>
