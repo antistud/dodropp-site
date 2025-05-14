@@ -284,7 +284,7 @@ export default function FaqPage() {
               Email Support
             </motion.a>
             <motion.a 
-              href="#" 
+              href="https://app.dodropp.com/" 
               className="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition flex items-center justify-center gap-2"
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.97 }}

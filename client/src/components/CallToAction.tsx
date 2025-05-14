@@ -54,7 +54,7 @@ export default function CallToAction() {
                 whileHover={{ y: -5, rotate: -2, scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }}
               >
-                <a href="#" className="px-8 py-4 bg-white text-primary rounded-full font-medium hover:bg-gray-100 transition shadow-xl inline-flex items-center gap-2">
+                <a href="https://app.dodropp.com/" className="px-8 py-4 bg-white text-primary rounded-full font-medium hover:bg-gray-100 transition shadow-xl inline-flex items-center gap-2">
                   <RocketIcon className="h-5 w-5" />
                   Let's Go! It's Free! 🎉
                 </a>

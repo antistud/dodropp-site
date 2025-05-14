@@ -23,12 +23,10 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <motion.div whileHover={{ y: -5, rotate: -1, scale: 1.03, boxShadow: "0 15px 30px -5px rgba(147, 51, 234, 0.5)" }}>
-                <Link href="/pricing">
-                  <a className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover:opacity-90 transition shadow-lg flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm14 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
-                    Create Your First List - Free! 🚀
-                  </a>
-                </Link>
+                <a href="https://app.dodropp.com/" className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover:opacity-90 transition shadow-lg flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm14 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+                  Create Your First List - Free! 🚀
+                </a>
               </motion.div>
               <motion.div whileHover={{ y: -3, rotate: 1, scale: 1.02 }}>
                 <Link href="#how-it-works">
