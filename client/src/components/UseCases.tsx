@@ -6,7 +6,7 @@ const useCases = [
     description: "Planning a weekend getaway or road trip? Create a DoDropp list that auto-assigns everyone different tasks, from booking hotels to making the perfect playlist!",
     image: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     alt: "Friends on a road trip",
-    tags: ["Travel Planning", "Packing Lists", "Road Trip Fun"],
+    tags: ["Travel Planning", "Packing Lists", "Road Trip Essentials"],
     tagColor: "bg-primary/20 text-primary",
     emoji: "🚗"
   },

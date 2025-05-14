@@ -5,15 +5,15 @@ import { ChevronDownIcon, SparklesIcon } from "lucide-react";
 const faqs = [
   {
     question: "🤔 What makes DoDropp so special compared to other checklist apps?",
-    answer: "DoDropp is like a magical checklist that practically runs itself! ✨ While other apps are either super boring or way too complicated, DoDropp hits the sweet spot. You can share lists with your friends with a simple link (they don't even need to sign up!), and our fun automation features make tasks appear, disappear, or assign themselves automatically - it's like having a checklist with superpowers!"
+    answer: "DoDropp is like a magical checklist that practically runs itself! ✨ While other apps are either too basic or way too complicated, DoDropp hits the sweet spot. You can share lists with your friends with a simple link (they don't even need to sign up!), and our powerful automation features make tasks appear, disappear, or assign themselves automatically - it's like having a checklist with superpowers!"
   },
   {
     question: "👥 Can my friends use my lists without signing up?",
-    answer: "Absolutely! That's what makes DoDropp so awesome for friend groups! 🎯 When you create a list, you get a magic link to share with anyone. Your friends can check things off and add comments without creating an account or downloading anything. If they love it (and we bet they will!), they can sign up to create their own fun lists!"
+    answer: "Absolutely! That's what makes DoDropp so awesome for friend groups! 🎯 When you create a list, you get a magic link to share with anyone. Your friends can check things off and add comments without creating an account or downloading anything. If they love it (and we bet they will!), they can sign up to create their own personalized lists!"
   },
   {
-    question: "✨ What kind of cool automation tricks can I set up?",
-    answer: "With our Pro Magic plan, you can create all sorts of fun automations! 🪄 For example: schedule tasks to appear before your weekend camping trip, create task chains (when someone marks 'Buy snacks' complete, 'Bring napkins' automatically gets assigned to someone else), set up recurring reminders for your weekly game night, or even have tasks auto-complete when others are done. It's like training your checklist to be your personal assistant!"
+    question: "✨ What kind of powerful automation options can I set up?",
+    answer: "With our Pro Magic plan, you can create all sorts of intelligent automations! 🪄 For example: schedule tasks to appear before your weekend camping trip, create task chains (when someone marks 'Buy snacks' complete, 'Bring napkins' automatically gets assigned to someone else), set up recurring reminders for your weekly game night, or even have tasks auto-complete when others are done. It's like training your checklist to be your personal assistant!"
   },
   {
     question: "👪 How many people can use a shared list?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "💸 Can I switch between the free plan and Pro Magic whenever I want?",
-    answer: "You bet! 🚀 Start with our free plan and upgrade to Pro Magic whenever you need those extra superpowers. If you decide you don't need all the magical features anymore, you can switch back to the free plan when your current billing period ends. Just remember, the free plan has a limit of 5 fun lists, so you might need to combine some lists or save your favorites if you have more than that!"
+    answer: "You bet! 🚀 Start with our free plan and upgrade to Pro Magic whenever you need those extra superpowers. If you decide you don't need all the magical features anymore, you can switch back to the free plan when your current billing period ends. Just remember, the free plan has a limit of 5 custom lists, so you might need to combine some lists or save your favorites if you have more than that!"
   }
 ];
 
