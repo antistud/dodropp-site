@@ -97,12 +97,12 @@ export default function PricingSection() {
             whileHover={{ y: -5, scale: 1.02, transition: { type: "spring", stiffness: 300 } }}
           >
             <div className="absolute top-0 right-8 transform -translate-y-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-sm font-bold">
-              Most Fun! ⭐
+              Most Popular! ⭐
             </div>
             
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-primary">Pro Magic ✨</h3>
-              <p className="text-gray-600 mt-2">For friend groups who want all the cool features</p>
+              <p className="text-gray-600 mt-2">For friend groups who want all the advanced features</p>
             </div>
             
             <div className="mb-6">

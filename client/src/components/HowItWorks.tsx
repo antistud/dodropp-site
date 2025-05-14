@@ -4,10 +4,10 @@ const steps = [
   {
     number: 1,
     emoji: "✏️",
-    title: "Create Fun Lists!",
+    title: "Create Amazing Lists!",
     description: "Make lists for everything - camping trips, movie nights, birthday parties - and add all the tasks you need to remember!",
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    alt: "Creating a fun checklist",
+    alt: "Creating a digital checklist",
     bgColor: "bg-primary"
   },
   {
