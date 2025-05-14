@@ -71,10 +71,10 @@ export default function Features() {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Super Fun Features <br />Without the Boring Stuff!
+            Powerful Features <br />Without the Complexity!
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            DoDropp keeps the fun in checklists - perfect for friend groups, party planning, trips, and everyday adventures!
+            DoDropp makes checklists effective - perfect for friend groups, party planning, trips, and everyday adventures!
           </p>
         </div>
         

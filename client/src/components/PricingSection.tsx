@@ -4,9 +4,9 @@ import { Link } from "wouter";
 
 // Free plan features
 const freePlanFeatures = [
-  { name: "Up to 5 fun lists for all your activities", included: true },
+  { name: "Up to 5 custom lists for all your activities", included: true },
   { name: "Unlimited tasks on each list", included: true },
-  { name: "Cool tags to organize your stuff", included: true },
+  { name: "Smart tags to organize your items", included: true },
   { name: "Share with friends via simple links", included: true },
   { name: "Magic automation rules ✨", included: false },
   { name: "Tasks that create other tasks automatically", included: false }
@@ -29,7 +29,7 @@ export default function PricingSection() {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Simple Pricing, Maximum Fun!
+            Simple Pricing, Maximum Value!
           </h2>
           <p className="mt-4 text-xl text-gray-600">
             Start free today, upgrade only if you need extra magic powers ✨

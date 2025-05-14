@@ -45,10 +45,10 @@ export default function UseCases() {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Fun Ways to Use DoDropp! 🎉
+            Creative Ways to Use DoDropp! 🎉
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            See how friend groups, families, and hobby clubs are having fun with automated checklists
+            See how friend groups, families, and hobby clubs are thriving with automated checklists
           </p>
         </div>
         

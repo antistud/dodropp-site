@@ -14,7 +14,7 @@ export default function Pricing() {
       <div className="container mx-auto px-6 mb-12">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Fun Plans for Every Friend Group
+            Smart Plans for Every Friend Group
             <span className="block mt-2 bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
               (Magic Powers Included! ✨)
             </span>
