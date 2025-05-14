@@ -10,14 +10,17 @@ export default function Pricing() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gray-50 pt-32">
+    <main className="min-h-screen bg-gradient-to-b from-purple-50 to-white pt-32">
       <div className="container mx-auto px-6 mb-12">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Pricing Plans for Every Team
+            Fun Plans for Every Friend Group
+            <span className="block mt-2 bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+              (Magic Powers Included! ✨)
+            </span>
           </h1>
           <p className="text-xl text-gray-600">
-            Start for free, upgrade when you need more power. No credit card required.
+            Start for free, add magic powers when you need them! No credit card needed to begin your adventure.
           </p>
         </div>
       </div>

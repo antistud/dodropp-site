@@ -13,19 +13,20 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Fun Checklists <br />
+              Supercharged Checklists <br />
               <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-                That Magically Complete Themselves!
+                That Make Group Planning Effortless!
               </span>
             </h1>
             <p className="mt-6 text-xl text-gray-600 leading-relaxed">
-              DoDropp is where checklists meet magic! ✨ Share with friends, family, and groups with a simple link. Create cool automation rules that make your to-dos practically finish themselves!
+              DoDropp turns boring to-do lists into magical, self-organizing adventures! ✨ Share one link with your friends, set up fun automations, and watch your group tasks complete themselves - from game nights to road trips!
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <motion.div whileHover={{ y: -5, rotate: -1, scale: 1.03, boxShadow: "0 15px 30px -5px rgba(147, 51, 234, 0.5)" }}>
                 <Link href="/pricing">
-                  <a className="px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary/90 transition shadow-lg">
-                    Get Started - It's Free! 🎉
+                  <a className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover:opacity-90 transition shadow-lg flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 8h14M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm14 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>
+                    Create Your First List - Free! 🚀
                   </a>
                 </Link>
               </motion.div>
