@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function BrandsBar() {
-  // Fun community groups instead of corporate brands
+  // Community groups instead of corporate brands
   const communities = [
     { name: "Book Clubs", emoji: "📚" },
     { name: "Game Night Groups", emoji: "🎲" },
@@ -14,7 +14,7 @@ export default function BrandsBar() {
   return (
     <section className="py-12 bg-gradient-to-r from-purple-50 via-white to-purple-50">
       <div className="container mx-auto px-6">
-        <p className="text-center text-gray-600 mb-8 text-lg">Used by fun groups everywhere!</p>
+        <p className="text-center text-gray-600 mb-8 text-lg">Used by amazing groups everywhere!</p>
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12">
           {communities.map((community, index) => (
             <motion.div

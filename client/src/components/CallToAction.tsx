@@ -47,7 +47,7 @@ export default function CallToAction() {
               <SparklesIcon className="h-8 w-8" />
             </h2>
             <p className="text-xl mb-8 text-white/90">
-              Start creating fun lists for your friend groups, family trips, hobby clubs, and adventures today! No credit card needed! ✨
+              Start creating amazing lists for your friend groups, family trips, hobby clubs, and adventures today! No credit card needed! ✨
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <motion.div 
