@@ -56,44 +56,43 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {/* A laptop mockup showing the DoDropp interface */}
-            <div className="relative">
-              {/* A modern web interface showing a checklist application */}
-              <motion.img 
-                src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080" 
-                alt="DoDropp interface on laptop" 
-                className="rounded-2xl shadow-2xl border-4 border-accent" 
-                whileHover={{ rotate: 1, scale: 1.02 }}
-              />
-              
-              {/* Floating task card for visual effect */}
+            {/* Floating task card showcase */}
+            <div className="relative flex justify-center items-center h-full">
               <motion.div 
-                className="absolute top-10 -right-10 bg-white p-4 rounded-xl shadow-lg max-w-xs hidden md:block border-2 border-secondary"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-                whileHover={{ rotate: -2, scale: 1.05 }}
+                className="bg-white p-6 rounded-xl shadow-xl max-w-sm border-2 border-secondary"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                whileHover={{ rotate: -1, scale: 1.03 }}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-bold text-gray-800">Weekend Road Trip! 🚗</h3>
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="font-bold text-xl text-gray-800">Weekend Road Trip! 🚗</h3>
                   <span className="px-2 py-1 bg-purple-100 text-primary rounded-full text-xs">Shared</span>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <div className="flex items-center">
-                    <input type="checkbox" checked readOnly className="w-4 h-4 text-primary rounded mr-2" />
-                    <span className="text-gray-500 line-through">Create playlist</span>
+                    <input type="checkbox" checked readOnly className="w-5 h-5 text-primary rounded mr-3" />
+                    <span className="text-gray-500 line-through text-lg">Create road trip playlist 🎵</span>
                   </div>
                   <div className="flex items-center">
-                    <input type="checkbox" checked readOnly className="w-4 h-4 text-primary rounded mr-2" />
-                    <span className="text-gray-500 line-through">Pack snacks</span>
+                    <input type="checkbox" checked readOnly className="w-5 h-5 text-primary rounded mr-3" />
+                    <span className="text-gray-500 line-through text-lg">Pack snacks and drinks 🥨</span>
                   </div>
                   <div className="flex items-center">
-                    <input type="checkbox" className="w-4 h-4 text-primary rounded mr-2" />
-                    <span className="text-gray-800">Check tire pressure</span>
+                    <input type="checkbox" className="w-5 h-5 text-primary rounded mr-3" />
+                    <span className="text-gray-800 text-lg">Check tire pressure ✓</span>
+                  </div>
+                  <div className="flex items-center">
+                    <input type="checkbox" className="w-5 h-5 text-primary rounded mr-3" />
+                    <span className="text-gray-800 text-lg">Fill up gas tank ⛽</span>
+                  </div>
+                  <div className="flex items-center">
+                    <input type="checkbox" className="w-5 h-5 text-primary rounded mr-3" />
+                    <span className="text-gray-800 text-lg">Charge phone battery 🔋</span>
                   </div>
                 </div>
-                <div className="text-xs text-gray-500 mt-3">
-                  Auto-assigned to Alex when gas is purchased ⛽
+                <div className="text-sm text-primary font-medium mt-4 bg-primary/5 p-2 rounded">
+                  Auto-assigned to Alex when gas is purchased ✨
                 </div>
               </motion.div>
             </div>
