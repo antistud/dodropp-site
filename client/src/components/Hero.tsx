@@ -46,7 +46,7 @@ export default function Hero() {
                 <div className="w-10 h-10 rounded-full bg-pink-500 border-2 border-white flex items-center justify-center text-white font-bold">RS</div>
               </div>
               <div className="text-gray-600">
-                <strong>1,000+</strong> happy friend groups use DoDropp!
+                Perfect for friend groups, families, and clubs!
               </div>
             </div>
           </motion.div>
