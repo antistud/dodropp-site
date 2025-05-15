@@ -31,8 +31,8 @@ const useCases = [
   {
     title: "Family Vacation Magic! ✨",
     description: "Create packing lists with photo tasks to show exactly which items to bring, file uploads for important travel documents, and text inputs to gather everyone's activity preferences!",
-    image: "https://images.unsplash.com/photo-1607582544916-f9d71a0a6ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-    alt: "Family on vacation",
+    image: "https://images.unsplash.com/photo-1560632653-b3f106c1a8cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    alt: "Family enjoying beach vacation",
     tags: ["Visual Packing Lists", "Document Storage", "Activity Planning"],
     tagColor: "bg-accent/20 text-accent-foreground",
     emoji: "🧳"
