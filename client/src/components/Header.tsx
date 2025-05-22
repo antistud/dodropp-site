@@ -17,6 +17,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navItems = [
+    { name: "✨ Features", href: "/features" },
+    { name: "🪄 How It Works", href: "/how-it-works" },
+    { name: "💸 Pricing", href: "/pricing" },
+    { name: "❓ FAQ", href: "/faq" }
+  ];
+
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-md ${scrolled ? "shadow-lg py-2 bg-white/90" : "py-4 bg-white/80"}`}>
       <div className="container mx-auto px-6">
@@ -32,14 +39,9 @@ export default function Header() {
               </span>
             </motion.a>
           </Link>
-          
+
           <div className="hidden md:flex items-center space-x-8">
-            {[
-              { name: "✨ Features", href: "/#features" },
-              { name: "🪄 How It Works", href: "/how-it-works" },
-              { name: "💸 Pricing", href: "/pricing" },
-              { name: "❓ FAQ", href: "/faq" }
-            ].map((item, index) => (
+            {navItems.map((item, index) => (
               <Link key={index} href={item.href}>
                 <motion.a 
                   className={`text-gray-700 hover:text-primary font-medium transition ${location === item.href.replace(/^\/#/, '/') ? "text-primary" : ""}`}
@@ -50,7 +52,7 @@ export default function Header() {
               </Link>
             ))}
           </div>
-          
+
           <div className="flex items-center space-x-4">
             <motion.a 
               href="https://app.dodropp.com/" 
@@ -85,7 +87,7 @@ export default function Header() {
             </motion.button>
           </div>
         </div>
-        
+
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <motion.div 
@@ -95,12 +97,7 @@ export default function Header() {
             transition={{ duration: 0.2 }}
           >
             <div className="flex flex-col space-y-4 px-4">
-              {[
-                { name: "✨ Features", href: "/#features" },
-                { name: "🪄 How It Works", href: "/how-it-works" },
-                { name: "💸 Pricing", href: "/pricing" },
-                { name: "❓ FAQ", href: "/faq" }
-              ].map((item, index) => (
+              {navItems.map((item, index) => (
                 <Link key={index} href={item.href}>
                   <motion.a 
                     className={`text-gray-700 hover:text-primary font-medium transition ${location === item.href.replace(/^\/#/, '/') ? "text-primary" : ""}`}
