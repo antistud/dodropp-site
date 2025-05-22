@@ -53,25 +53,24 @@ export default function Header() {
           
           <div className="flex items-center space-x-4">
             <motion.a 
-              href="#" 
+              href="https://app.dodropp.com/" 
               className="hidden md:inline-block text-primary/80 hover:text-primary font-medium transition border-b-2 border-transparent hover:border-primary"
               whileHover={{ y: -2 }}
             >
               Login
             </motion.a>
-            <Link href="/pricing">
-              <motion.a 
-                className="px-5 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium transition shadow-md"
-                whileHover={{ 
-                  y: -4, 
-                  scale: 1.05,
-                  boxShadow: "0 15px 25px -5px rgba(147, 51, 234, 0.5)" 
-                }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Started Free! 🚀
-              </motion.a>
-            </Link>
+            <motion.a
+              href="https://app.dodropp.com/"
+              className="px-5 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium transition shadow-md"
+              whileHover={{ 
+                y: -4, 
+                scale: 1.05,
+                boxShadow: "0 15px 25px -5px rgba(147, 51, 234, 0.5)" 
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get Started Free! 🚀
+            </motion.a>
             <motion.button 
               className="md:hidden text-primary" 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -113,7 +112,7 @@ export default function Header() {
                 </Link>
               ))}
               <motion.a 
-                href="#" 
+                href="https://app.dodropp.com/" 
                 className="text-primary/80 hover:text-primary font-medium transition"
                 whileHover={{ x: 5 }}
               >
