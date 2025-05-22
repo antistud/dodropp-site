@@ -200,8 +200,6 @@ export default function FeaturesPage() {
       
       {/* Get Started CTA */}
       <CallToAction />
-      
-      <Footer />
     </>
   );
 }
