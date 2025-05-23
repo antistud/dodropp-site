@@ -27,7 +27,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-4">Product</h4>
             <ul className="space-y-2">
@@ -37,7 +37,7 @@ export default function Footer() {
               <li><a href="#" className="text-gray-400 hover:text-white transition">Updates</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-4">Resources</h4>
             <ul className="space-y-2">
@@ -47,18 +47,18 @@ export default function Footer() {
               <li><a href="#" className="text-gray-400 hover:text-white transition">API Docs</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-4">Company</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition">About</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">Careers</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">Privacy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">Terms</a></li>
+              <li><Link href="/terms"><a className="text-gray-400 hover:text-white transition">Terms</a></Link></li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
             &copy; {new Date().getFullYear()} DoDropp. All rights reserved.
