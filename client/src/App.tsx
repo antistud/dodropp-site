@@ -12,6 +12,7 @@ import FaqPage from "@/pages/Faq";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Terms from "@/pages/Terms"; // Added Terms page import
+import Privacy from "@/pages/Privacy"; // Added Privacy page import
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
         <Route path="/features" component={FeaturesPage} />
         <Route path="/faq" component={FaqPage} />
         <Route path="/terms" component={Terms} /> {/* Added Terms page route */}
+        <Route path="/privacy" component={Privacy} /> {/* Added Privacy page route */}
         <Route component={NotFound} />
       </Switch>
       <Footer />
