@@ -29,6 +29,20 @@ const proPlanFeatures = [
   { name: "Fast & friendly help when you need it", included: true }
 ];
 
+// Agent plan features
+const agentPlanFeatures = [
+  { name: "Everything in Pro Magic plan", included: true },
+  { name: "Email inbox monitoring and processing", included: true },
+  { name: "Automatic task creation from emails", included: true },
+  { name: "Smart categorization of incoming tasks", included: true },
+  { name: "Integration with Attio, Hubspot & Salesforce", included: true },
+  { name: "Custom task assignments based on email content", included: true },
+  { name: "Document & attachment extraction", included: true },
+  { name: "Priority support with dedicated agent", included: true },
+  { name: "Custom workflows and advanced automations", included: true },
+  { name: "Weekly analytics and productivity reports", included: true }
+];
+
 export default function PricingSection() {
   return (
     <section id="pricing" className="py-20 px-6 bg-gradient-to-b from-purple-50 to-white">
@@ -42,7 +56,7 @@ export default function PricingSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Free Plan */}
           <motion.div 
             className="p-8 rounded-2xl border-2 border-secondary/30 bg-white shadow-md hover:shadow-xl transition"
@@ -145,6 +159,61 @@ export default function PricingSection() {
               whileTap={{ scale: 0.97 }}
             >
               Start Monthly Plan - $3/month ✨
+            </motion.a>
+          </motion.div>
+          
+          {/* Agent Plan */}
+          <motion.div 
+            className="p-8 rounded-2xl border-2 border-accent bg-gradient-to-br from-white to-accent/5 shadow-lg relative"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            whileHover={{ y: -5, scale: 1.02, transition: { type: "spring", stiffness: 300 } }}
+          >
+            <div className="absolute top-0 right-8 transform -translate-y-1/2 bg-gradient-to-r from-accent to-primary text-white px-4 py-1 rounded-full text-sm font-bold">
+              Power User! 🚀
+            </div>
+            
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-accent">Agent 🤖</h3>
+              <p className="text-gray-600 mt-2">For professionals who want to automate their workflow</p>
+            </div>
+            
+            <div className="mb-6">
+              <div className="flex items-end">
+                <div className="text-4xl font-bold text-accent">$20</div>
+                <span className="text-gray-600 ml-1 mb-1">/month</span>
+              </div>
+              <p className="text-gray-600">AI-powered task management</p>
+            </div>
+            
+            <ul className="space-y-4 mb-8">
+              {agentPlanFeatures.map((feature, index) => (
+                <motion.li 
+                  key={index} 
+                  className="flex items-start"
+                  whileHover={{ x: 5 }}
+                >
+                  <span className="h-6 w-6 bg-accent/20 rounded-full flex items-center justify-center text-accent mt-0.5 mr-3 flex-shrink-0">
+                    {feature.name.includes("Magic") || feature.name.includes("AI") ? (
+                      <SparklesIcon className="h-4 w-4" />
+                    ) : (
+                      <CheckIcon className="h-4 w-4" />
+                    )}
+                  </span>
+                  <span className="text-gray-700">{feature.name}</span>
+                </motion.li>
+              ))}
+            </ul>
+            
+            <motion.a 
+              href="https://app.dodropp.com/agent" 
+              className="block w-full py-3 text-center bg-gradient-to-r from-accent to-primary text-white rounded-full font-medium transition shadow-md"
+              whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.4)" }}
+              whileTap={{ scale: 0.97 }}
+            >
+              Get Agent Plan - $20/month 🤖
             </motion.a>
           </motion.div>
         </div>
