@@ -32,15 +32,15 @@ const proPlanFeatures = [
 // Agent plan features
 const agentPlanFeatures = [
   { name: "Everything in Pro Magic plan", included: true },
-  { name: "Email inbox monitoring and processing", included: true },
-  { name: "Automatic task creation from emails", included: true },
-  { name: "Smart categorization of incoming tasks", included: true },
-  { name: "Integration with Attio, Hubspot & Salesforce", included: true },
-  { name: "Custom task assignments based on email content", included: true },
-  { name: "Document & attachment extraction", included: true },
-  { name: "Priority support with dedicated agent", included: true },
-  { name: "Custom workflows and advanced automations", included: true },
-  { name: "Weekly analytics and productivity reports", included: true }
+  { name: "AI personal project manager that never stops", included: true },
+  { name: "Intelligent task prioritization and scheduling", included: true },
+  { name: "Automatic project breakdown and planning", included: true },
+  { name: "Smart deadline tracking and reminders", included: true },
+  { name: "AI-powered progress insights and suggestions", included: true },
+  { name: "Predictive task dependencies and bottlenecks", included: true },
+  { name: "24/7 AI assistant for project optimization", included: true },
+  { name: "Advanced automation patterns and workflows", included: true },
+  { name: "Personalized productivity analytics and reports", included: true }
 ];
 
 export default function PricingSection() {
@@ -177,7 +177,7 @@ export default function PricingSection() {
             
             <div className="mb-6">
               <h3 className="text-2xl font-bold text-accent">Agent 🤖</h3>
-              <p className="text-gray-600 mt-2">For professionals who want to automate their workflow</p>
+              <p className="text-gray-600 mt-2">Your AI personal project manager that never stops organizing</p>
             </div>
             
             <div className="mb-6">
@@ -185,7 +185,7 @@ export default function PricingSection() {
                 <div className="text-4xl font-bold text-accent">$20</div>
                 <span className="text-gray-600 ml-1 mb-1">/month</span>
               </div>
-              <p className="text-gray-600">AI-powered task management</p>
+              <p className="text-gray-600">AI that works 24/7 for your productivity</p>
             </div>
             
             <ul className="space-y-4 mb-8">
@@ -208,12 +208,12 @@ export default function PricingSection() {
             </ul>
             
             <motion.a 
-              href="https://app.dodropp.com/agent" 
+              href="https://app.dodropp.com/" 
               className="block w-full py-3 text-center bg-gradient-to-r from-accent to-primary text-white rounded-full font-medium transition shadow-md"
               whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.4)" }}
               whileTap={{ scale: 0.97 }}
             >
-              Get Agent Plan - $20/month 🤖
+              Get AI Agent - $20/month 🤖
             </motion.a>
           </motion.div>
         </div>
