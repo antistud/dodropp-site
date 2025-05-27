@@ -127,10 +127,10 @@ export default function PricingSection() {
             
             <div className="mb-6">
               <div className="flex items-end">
-                <div className="text-4xl font-bold text-primary">$3</div>
+                <div className="text-4xl font-bold text-primary">$7</div>
                 <span className="text-gray-600 ml-1 mb-1">/month</span>
               </div>
-              <p className="text-gray-600">Less than a coffee! ☕</p>
+              <p className="text-gray-600">Less than a lunch! 🥪</p>
             </div>
             
             <ul className="space-y-4 mb-8">
@@ -158,7 +158,7 @@ export default function PricingSection() {
               whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.4)" }}
               whileTap={{ scale: 0.97 }}
             >
-              Start Monthly Plan - $3/month ✨
+              Start Monthly Plan - $7/month ✨
             </motion.a>
           </motion.div>
           
