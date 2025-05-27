@@ -208,12 +208,12 @@ export default function PricingSection() {
             </ul>
             
             <motion.a 
-              href="https://app.dodropp.com/" 
+              href="https://calendly.com/jon-t3ch/30min" 
               className="block w-full py-3 text-center bg-gradient-to-r from-accent to-primary text-white rounded-full font-medium transition shadow-md"
               whileHover={{ scale: 1.03, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.4)" }}
               whileTap={{ scale: 0.97 }}
             >
-              Get AI Agent - $20/month 🤖
+              Book a Call - $20/month 🤖
             </motion.a>
           </motion.div>
         </div>
