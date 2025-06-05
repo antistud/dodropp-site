@@ -62,18 +62,18 @@ export default function ProductShowcase() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {showcaseItems.map((item, index) => (
             <motion.div 
               key={index}
-              className="group relative max-w-sm mx-auto"
+              className="group relative max-w-xs mx-auto"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
+              <div className="relative overflow-hidden rounded-xl shadow-lg border-3 border-white/50 group-hover:shadow-xl transition-all duration-300">
                 <div className="aspect-[3/4] overflow-hidden">
                   <img 
                     src={item.image} 
@@ -82,12 +82,12 @@ export default function ProductShowcase() {
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-white font-medium text-base mb-1">{item.title}</h3>
+                <div className="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-white font-medium text-sm mb-1">{item.title}</h3>
                   <p className="text-white/90 text-xs font-light leading-relaxed">{item.description}</p>
                 </div>
               </div>
-              <div className={`absolute -top-2 -right-2 w-5 h-5 ${item.accent} rounded-full animate-pulse`} />
+              <div className={`absolute -top-2 -right-2 w-4 h-4 ${item.accent} rounded-full animate-pulse`} />
             </motion.div>
           ))}
         </div>
