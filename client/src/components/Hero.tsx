@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-slate-50 to-white">
+    <section className="pt-64 pb-32 px-6 bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           className="text-center"
