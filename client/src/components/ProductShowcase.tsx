@@ -62,11 +62,11 @@ export default function ProductShowcase() {
           </p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {showcaseItems.map((item, index) => (
             <motion.div 
               key={index}
-              className="group relative"
+              className="group relative max-w-sm mx-auto"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -74,18 +74,20 @@ export default function ProductShowcase() {
               whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
             >
               <div className="relative overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-auto object-cover"
-                />
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-white font-medium text-lg mb-2">{item.title}</h3>
-                  <p className="text-white/90 text-sm font-light">{item.description}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-white font-medium text-base mb-1">{item.title}</h3>
+                  <p className="text-white/90 text-xs font-light leading-relaxed">{item.description}</p>
                 </div>
               </div>
-              <div className={`absolute -top-3 -right-3 w-6 h-6 ${item.accent} rounded-full animate-pulse`} />
+              <div className={`absolute -top-2 -right-2 w-5 h-5 ${item.accent} rounded-full animate-pulse`} />
             </motion.div>
           ))}
         </div>
