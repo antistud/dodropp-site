@@ -50,13 +50,41 @@ export default function Features() {
           {features.map((feature, index) => (
             <motion.div 
               key={index}
-              className="text-center p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-300"
+              className="text-center p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-300 relative overflow-hidden"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -5, transition: { type: "spring", stiffness: 300 } }}
             >
+              {index === 0 && (
+                <div className="absolute top-4 right-4 opacity-10">
+                  <img 
+                    src="@assets/IMG_8098_1749149027927.PNG" 
+                    alt="Task generator interface" 
+                    className="w-20 h-20 rounded-lg object-cover"
+                  />
+                </div>
+              )}
+              {index === 1 && (
+                <div className="absolute top-4 right-4 opacity-10">
+                  <img 
+                    src="@assets/IMG_8100_1749149027927.PNG" 
+                    alt="Share functionality interface" 
+                    className="w-20 h-20 rounded-lg object-cover"
+                  />
+                </div>
+              )}
+              {index === 2 && (
+                <div className="absolute top-4 right-4 opacity-10">
+                  <img 
+                    src="@assets/IMG_8094_1749149027927.PNG" 
+                    alt="Task details and management interface" 
+                    className="w-20 h-20 rounded-lg object-cover"
+                  />
+                </div>
+              )}
+              
               <motion.div 
                 className={`w-16 h-16 ${feature.bgColor} rounded-full flex items-center justify-center mx-auto mb-6`}
                 whileHover={{ scale: 1.1, rotate: 5 }}

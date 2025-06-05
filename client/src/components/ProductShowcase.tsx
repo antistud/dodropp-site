@@ -1,0 +1,121 @@
+import { motion } from "framer-motion";
+import img1 from "@assets/IMG_8095_1749149027927.PNG";
+import img2 from "@assets/IMG_8097_1749149027927.PNG";
+import img3 from "@assets/IMG_8093_1749149027927.PNG";
+import img4 from "@assets/IMG_8098_1749149027927.PNG";
+import img5 from "@assets/IMG_8100_1749149027927.PNG";
+import img6 from "@assets/IMG_8094_1749149027927.PNG";
+
+const showcaseItems = [
+  {
+    image: img1,
+    title: "Multiple Lists, Zero Stress",
+    description: "Organize different projects with beautiful progress tracking that keeps you motivated.",
+    accent: "bg-emerald-500"
+  },
+  {
+    image: img2,
+    title: "Smart Task Management",
+    description: "Intelligent task organization with tags, subtasks, and completion tracking that adapts to how you work.",
+    accent: "bg-purple-500"
+  },
+  {
+    image: img3,
+    title: "Focus Timer Magic",
+    description: "Built-in focus sessions that help ADHD minds stay on track without feeling overwhelmed.",
+    accent: "bg-indigo-500"
+  },
+  {
+    image: img4,
+    title: "AI Task Generation",
+    description: "Generate tasks from templates or create custom workflows that match your unique thinking style.",
+    accent: "bg-pink-500"
+  },
+  {
+    image: img5,
+    title: "Effortless Sharing",
+    description: "Share your progress with one magical link - no apps to download, no complex setups.",
+    accent: "bg-blue-500"
+  },
+  {
+    image: img6,
+    title: "Detailed Task Views",
+    description: "Rich task details with subtasks, photos, and time tracking that grow with your needs.",
+    accent: "bg-orange-500"
+  }
+];
+
+export default function ProductShowcase() {
+  return (
+    <section className="py-20 px-6 bg-gradient-to-b from-white to-slate-50">
+      <div className="container mx-auto max-w-7xl">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-3xl md:text-5xl font-light text-slate-800 mb-6">
+            See the{" "}
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text font-medium">
+              Magic ✨
+            </span>
+            {" "}in Action
+          </h2>
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
+            Real screenshots from real users who've transformed their productivity while staying calm and focused.
+          </p>
+        </motion.div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {showcaseItems.map((item, index) => (
+            <motion.div 
+              key={index}
+              className="group relative"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
+            >
+              <div className="relative overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <h3 className="text-white font-medium text-lg mb-2">{item.title}</h3>
+                  <p className="text-white/90 text-sm font-light">{item.description}</p>
+                </div>
+              </div>
+              <div className={`absolute -top-3 -right-3 w-6 h-6 ${item.accent} rounded-full animate-pulse`} />
+            </motion.div>
+          ))}
+        </div>
+        
+        <motion.div 
+          className="text-center mt-16"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <p className="text-slate-500 font-light mb-8">
+            "Finally, a tool that works with my brain, not against it"
+          </p>
+          <motion.a 
+            href="https://app.dodropp.com/" 
+            className="inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:shadow-xl hover:scale-105 transition-all duration-300"
+            whileHover={{ y: -3 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Try It Free - See Your Own Magic
+          </motion.a>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
