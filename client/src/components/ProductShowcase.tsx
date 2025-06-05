@@ -62,34 +62,46 @@ export default function ProductShowcase() {
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {showcaseItems.map((item, index) => (
-            <motion.div 
-              key={index}
-              className="group relative max-w-xs mx-auto"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
-            >
-              <div className="relative overflow-hidden rounded-xl shadow-lg border-3 border-white/50 group-hover:shadow-xl transition-all duration-300">
-                <div className="aspect-[3/4] overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    className="w-full h-full object-cover object-top"
-                  />
+        <div className="relative">
+          <div className="flex gap-4 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory">
+            {showcaseItems.map((item, index) => (
+              <motion.div 
+                key={index}
+                className="group relative flex-shrink-0 w-56 snap-center"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -5, transition: { type: "spring", stiffness: 300 } }}
+              >
+                <div className="relative overflow-hidden rounded-lg shadow-lg border-2 border-white/50 group-hover:shadow-xl transition-all duration-300">
+                  <div className="aspect-[3/4] overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-white font-medium text-sm mb-1">{item.title}</h3>
+                    <p className="text-white/90 text-xs font-light leading-relaxed">{item.description}</p>
+                  </div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-white font-medium text-sm mb-1">{item.title}</h3>
-                  <p className="text-white/90 text-xs font-light leading-relaxed">{item.description}</p>
-                </div>
-              </div>
-              <div className={`absolute -top-2 -right-2 w-4 h-4 ${item.accent} rounded-full animate-pulse`} />
-            </motion.div>
-          ))}
+                <div className={`absolute -top-1 -right-1 w-4 h-4 ${item.accent} rounded-full animate-pulse`} />
+              </motion.div>
+            ))}
+          </div>
+          
+          {/* Scroll indicator */}
+          <div className="flex justify-center mt-4 space-x-2">
+            {showcaseItems.map((_, index) => (
+              <div 
+                key={index}
+                className="w-2 h-2 rounded-full bg-slate-300"
+              />
+            ))}
+          </div>
         </div>
         
         <motion.div 
