@@ -19,10 +19,20 @@ export default function Hero() {
             <span className="text-3xl md:text-4xl">Remove the Chaos ✨</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-12 font-light">
-            Transform overwhelming tasks into peaceful, manageable steps. Make
-            your work feel less worky, one focused moment at a time.
+          <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-4 font-light">
+            DoDropp is an AI-powered checklist for people who overcommit.
           </p>
+          <motion.div
+            className="text-center text-slate-500"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <p className="text-lg font-light mb-16">
+              find calm with all of the groups, teams, and projects <br /> that
+              you have commited yourself to.
+            </p>
+          </motion.div>
 
           <motion.div
             className="mb-16"
@@ -34,9 +44,10 @@ export default function Hero() {
               href="https://app.dodropp.com/"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
-            🎯 Unlock Your Focus
+              🎯 Unlock Your Focus
             </a>
           </motion.div>
+      
 
           <motion.div
             className="text-center text-slate-500"
@@ -45,7 +56,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p className="text-lg font-light">
-              No overwhelm. No chaos. Just Focus.
+              No chaos. Just Calm, Start For Free.
             </p>
           </motion.div>
         </motion.div>
