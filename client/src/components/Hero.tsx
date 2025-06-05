@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+
+<old_str>import { motion } from "framer-motion";
 import { Link } from "wouter";
 
 export default function Hero() {
@@ -101,4 +102,75 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+}</old_str>
+<new_str>import { motion } from "framer-motion";
+
+export default function Hero() {
+  return (
+    <section className="pt-32 pb-20 px-6 bg-white">
+      <div className="container mx-auto max-w-4xl text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            Smart Checklists for <br />
+            <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+              Friend Groups
+            </span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto">
+            Share one link. Everyone adds what they need to bring. Tasks organize themselves automatically.
+          </p>
+          
+          <motion.div 
+            className="mb-12"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <a 
+              href="https://app.dodropp.com/" 
+              className="inline-block px-12 py-4 text-xl bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold hover:opacity-90 transition shadow-lg"
+            >
+              Start Your First List Free 🚀
+            </a>
+          </motion.div>
+          
+          <motion.div 
+            className="bg-white p-8 rounded-xl shadow-lg max-w-md mx-auto border-2 border-gray-100"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <div className="text-left">
+              <h3 className="font-bold text-lg text-gray-800 mb-4">Beach Day Planning 🏖️</h3>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-primary rounded mr-3"></div>
+                  <span className="text-gray-500 line-through">Sunscreen - Sarah</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-primary rounded mr-3"></div>
+                  <span className="text-gray-500 line-through">Beach umbrella - Mike</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 border-2 border-gray-300 rounded mr-3"></div>
+                  <span className="text-gray-800">Snacks & drinks</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 border-2 border-gray-300 rounded mr-3"></div>
+                  <span className="text-gray-800">Bluetooth speaker</span>
+                </div>
+              </div>
+              <div className="text-sm text-primary font-medium mt-4 bg-primary/5 p-2 rounded">
+                ✨ Auto-assigned to next person who checks in
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}</new_str>

@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+
+<old_str>import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -107,4 +108,65 @@ export default function HowItWorks() {
       </div>
     </section>
   );
-}
+}</old_str>
+<new_str>import { motion } from "framer-motion";
+
+const steps = [
+  {
+    number: 1,
+    emoji: "✏️",
+    title: "Create Your List",
+    description: "Add tasks for your trip, party, or event. Simple as that.",
+  },
+  {
+    number: 2,
+    emoji: "🔗",
+    title: "Share the Link",
+    description: "Send one link to your friends. No apps to download.",
+  },
+  {
+    number: 3,
+    emoji: "✨",
+    title: "Tasks Organize Themselves",
+    description: "Watch tasks get assigned automatically as people check things off.",
+  }
+];
+
+export default function HowItWorks() {
+  return (
+    <section id="how-it-works" className="py-20 px-6 bg-gray-50">
+      <div className="container mx-auto max-w-4xl">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            How It Works
+          </h2>
+          <p className="text-xl text-gray-600">
+            Three simple steps to organized group planning
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {steps.map((step, index) => (
+            <motion.div 
+              key={index}
+              className="text-center bg-white p-8 rounded-xl shadow-sm border border-gray-100"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <div className="text-4xl mb-4">{step.emoji}</div>
+              <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-4">
+                {step.number}
+              </div>
+              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+              <p className="text-gray-600 leading-relaxed">
+                {step.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}</new_str>
