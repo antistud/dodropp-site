@@ -60,7 +60,7 @@ export default function Features() {
               {index === 0 && (
                 <div className="absolute top-4 right-4 opacity-10">
                   <img 
-                    src="/src/assets/IMG_8098_1749149027927.PNG" 
+                    src="/src/assets/task_generator.PNG" 
                     alt="Task generator interface" 
                     className="w-20 h-20 rounded-lg object-cover"
                   />
@@ -69,7 +69,7 @@ export default function Features() {
               {index === 1 && (
                 <div className="absolute top-4 right-4 opacity-10">
                   <img 
-                    src="/src/assets/IMG_8100_1749149027927.PNG" 
+                    src="/src/assets/share_lists.PNG" 
                     alt="Share functionality interface" 
                     className="w-20 h-20 rounded-lg object-cover"
                   />
@@ -78,8 +78,8 @@ export default function Features() {
               {index === 2 && (
                 <div className="absolute top-4 right-4 opacity-10">
                   <img 
-                    src="/src/assets/task_page.PNG" 
-                    alt="Task details and management interface" 
+                    src="/src/assets/focus_timer.PNG" 
+                    alt="Focus timer interface" 
                     className="w-20 h-20 rounded-lg object-cover"
                   />
                 </div>

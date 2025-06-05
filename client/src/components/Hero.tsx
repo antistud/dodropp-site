@@ -29,9 +29,60 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p className="text-lg font-light mb-16">
-              find calm with all of the groups, teams, and projects <br /> that
-              you have commited yourself to.
+              Find calm with all the projects and goals you've committed to.
             </p>
+          </motion.div>
+
+          <motion.div 
+            className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
+            <motion.div 
+              className="relative group"
+              whileHover={{ y: -10, rotate: -1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <img 
+                src="/src/assets/my_lists_cards.PNG" 
+                alt="DoDropp lists overview showing multiple organized projects" 
+                className="rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300"
+              />
+              <div className="absolute -bottom-3 -right-3 bg-emerald-500 text-white text-sm font-medium px-3 py-1 rounded-full">
+                Multiple Lists
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="relative group"
+              whileHover={{ y: -10, scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <img 
+                src="/src/assets/list_page.PNG" 
+                alt="DoDropp task management with smart organization" 
+                className="rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300"
+              />
+              <div className="absolute -bottom-3 -right-3 bg-purple-500 text-white text-sm font-medium px-3 py-1 rounded-full">
+                Smart Tasks
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="relative group"
+              whileHover={{ y: -10, rotate: 1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <img 
+                src="/src/assets/focus_timer.PNG" 
+                alt="DoDropp focus timer for ADHD-friendly work sessions" 
+                className="rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300"
+              />
+              <div className="absolute -bottom-3 -right-3 bg-indigo-500 text-white text-sm font-medium px-3 py-1 rounded-full">
+                Focus Mode
+              </div>
+            </motion.div>
           </motion.div>
 
           <motion.div
