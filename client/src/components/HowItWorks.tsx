@@ -1,5 +1,4 @@
-
-<old_str>import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -13,20 +12,20 @@ const steps = [
   },
   {
     number: 2,
-    emoji: "🪄",
-    title: "Add Some Magic!",
-    description: "Sprinkle in some automation - like auto-assigning snack duty to different friends each week or reminding everyone to bring swimsuits when beach day is checked!",
-    image: "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    alt: "Adding automation magic",
+    emoji: "🔗",
+    title: "Share with Your Squad!",
+    description: "Get a magical share link that works instantly - no apps to download, no accounts needed for your friends to participate!",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    alt: "Friends sharing and collaborating",
     bgColor: "bg-secondary"
   },
   {
     number: 3,
-    emoji: "🔗",
-    title: "Share With Friends!",
-    description: "Send one simple link to your whole squad! No need for everyone to download apps or create accounts - they can just click and start checking things off!",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-    alt: "Sharing with friends",
+    emoji: "✨",
+    title: "Watch the Magic Happen!",
+    description: "Tasks complete themselves with smart automation, photos get uploaded, files shared, and everyone stays perfectly coordinated!",
+    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
+    alt: "Automated task completion",
     bgColor: "bg-accent"
   }
 ];
@@ -37,136 +36,82 @@ export default function HowItWorks() {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            How Does The Magic Work? ✨
+            How DoDropp Works Its Magic! ✨
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            It's super easy to create, automate, and share your checklists with your friends and family!
+            Three simple steps to transform your group planning from chaos to coordination
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="space-y-16">
           {steps.map((step, index) => (
             <motion.div 
               key={index}
-              className="text-center"
-              initial={{ opacity: 0, y: 20 }}
+              className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-center gap-12`}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8, scale: 1.02 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <motion.div 
-                className={`w-20 h-20 ${step.bgColor} rounded-2xl text-white flex flex-col items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg`}
-                whileHover={{ rotate: [0, -5, 5, -5, 0], scale: 1.1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="text-3xl">{step.emoji}</div>
-                <div className="text-sm font-normal mt-1">Step {step.number}</div>
-              </motion.div>
-              <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-              <p className="text-gray-600">
-                {step.description}
-              </p>
-              <motion.div 
-                className="mt-6 rounded-xl overflow-hidden shadow-lg border-2 border-primary/20"
-                whileHover={{ 
-                  y: -8, 
-                  rotate: index % 2 === 0 ? 2 : -2,
-                  transition: { type: "spring", stiffness: 300 }
-                }}
-              >
-                <img src={step.image} alt={step.alt} className="w-full h-auto" />
-              </motion.div>
+              <div className="lg:w-1/2">
+                <motion.div 
+                  className="relative"
+                  whileHover={{ scale: 1.05, rotate: index % 2 === 0 ? 2 : -2 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <img 
+                    src={step.image} 
+                    alt={step.alt} 
+                    className="rounded-2xl shadow-2xl border-4 border-white"
+                  />
+                  <div className={`absolute -top-4 -left-4 w-16 h-16 ${step.bgColor} rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg`}>
+                    {step.number}
+                  </div>
+                </motion.div>
+              </div>
+              
+              <div className="lg:w-1/2 text-center lg:text-left">
+                <motion.div 
+                  className="text-6xl mb-4"
+                  animate={{ 
+                    rotate: [0, 10, -10, 0],
+                    scale: [1, 1.1, 1] 
+                  }}
+                  transition={{ 
+                    repeat: Infinity, 
+                    duration: 3,
+                    delay: index * 0.5
+                  }}
+                >
+                  {step.emoji}
+                </motion.div>
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">{step.title}</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
         
         <motion.div 
-          className="text-center mt-16 flex flex-col md:flex-row items-center justify-center gap-6"
-          initial={{ opacity: 0, y: 20 }}
+          className="text-center mt-16"
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
+          <h3 className="text-2xl font-bold mb-6">Ready to experience the magic?</h3>
           <motion.a 
             href="https://app.dodropp.com/" 
-            className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium shadow-lg"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium transition shadow-lg"
             whileHover={{ scale: 1.05, y: -3 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.97 }}
           >
-            Try It Now - It's Free! 🎉
-          </motion.a>
-          
-          <motion.a 
-            href="/how-it-works" 
-            className="inline-block px-8 py-3 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary/10 transition"
-            whileHover={{ scale: 1.05, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            See Detailed Guide
+            Start Your First List - Free! 🚀
           </motion.a>
         </motion.div>
       </div>
     </section>
   );
-}</old_str>
-<new_str>import { motion } from "framer-motion";
-
-const steps = [
-  {
-    number: 1,
-    emoji: "✏️",
-    title: "Create Your List",
-    description: "Add tasks for your trip, party, or event. Simple as that.",
-  },
-  {
-    number: 2,
-    emoji: "🔗",
-    title: "Share the Link",
-    description: "Send one link to your friends. No apps to download.",
-  },
-  {
-    number: 3,
-    emoji: "✨",
-    title: "Tasks Organize Themselves",
-    description: "Watch tasks get assigned automatically as people check things off.",
-  }
-];
-
-export default function HowItWorks() {
-  return (
-    <section id="how-it-works" className="py-20 px-6 bg-gray-50">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            How It Works
-          </h2>
-          <p className="text-xl text-gray-600">
-            Three simple steps to organized group planning
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step, index) => (
-            <motion.div 
-              key={index}
-              className="text-center bg-white p-8 rounded-xl shadow-sm border border-gray-100"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <div className="text-4xl mb-4">{step.emoji}</div>
-              <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-4">
-                {step.number}
-              </div>
-              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-gray-600 leading-relaxed">
-                {step.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}</new_str>
+}
