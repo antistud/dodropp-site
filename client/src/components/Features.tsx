@@ -2,24 +2,24 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m1 12 6 0m6 0 6 0"/></svg>,
-    title: "One Thing at a Time",
-    description: "Break overwhelming tasks into peaceful, manageable steps that feel achievable.",
-    bgColor: "bg-slate-50",
-    iconColor: "text-indigo-600"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>,
-    title: "Visual Organization",
-    description: "See your progress clearly with calm, uncluttered layouts designed for focus.",
-    bgColor: "bg-slate-50",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m21.4 15-2.1-2.1m-3.3-3.2-2.1-2.2m-3.3-3.2-2.1-2.1M3.8 3.8l16.4 16.4"/><path d="m17.7 17.7-2.1-2.1m-3.3-3.3-2.2-2.1m-3.2-3.3-2.1-2.1M18.2 6.2l-1.4-1.4m-3.3-3.3 2.1 2.1"/></svg>,
+    title: "Magic Automation Powers ✨",
+    description: "Tasks complete themselves like magic! Set it once, then watch your team's productivity soar while you stay zen.",
+    bgColor: "bg-purple-50",
     iconColor: "text-purple-600"
   },
   {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect width="4" height="4" x="10" y="21"/><path d="M12 17v4"/><path d="M8 21l8 0"/></svg>,
-    title: "Gentle Automation",
-    description: "Let tasks complete themselves quietly in the background while you maintain your flow.",
-    bgColor: "bg-slate-50",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>,
+    title: "Supercharged Sharing 🚀",
+    description: "One magical link connects your whole crew. No apps to download, no accounts needed - just instant group coordination.",
+    bgColor: "bg-blue-50",
+    iconColor: "text-blue-600"
+  },
+  {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m1 12 6 0m6 0 6 0"/></svg>,
+    title: "Focus-Friendly Design 🧘",
+    description: "Beautiful, uncluttered interface that helps ADHD minds stay on track. One thing at a time, without the overwhelm.",
+    bgColor: "bg-emerald-50",
     iconColor: "text-emerald-600"
   }
 ];
@@ -36,13 +36,13 @@ export default function Features() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl md:text-5xl font-light text-slate-800 mb-6">
-            Designed for Your{" "}
+            Make Work Feel Less{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text font-medium">
-              Peace of Mind
+              Worky ✨
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-            Every feature thoughtfully crafted to reduce overwhelm and enhance clarity.
+            Supercharge your team's productivity while keeping everyone calm, focused, and actually enjoying the process.
           </p>
         </motion.div>
         
@@ -86,7 +86,7 @@ export default function Features() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <p className="text-lg text-slate-500 font-light">
-            "Simple tools for complex minds"
+            "Magical powers for teams that think differently"
           </p>
         </motion.div>
       </div>

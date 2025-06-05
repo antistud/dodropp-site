@@ -3,49 +3,50 @@ import { CheckIcon } from "lucide-react";
 
 const plans = [
   {
-    name: "Free",
+    name: "Free Magic",
     price: "$0",
     period: "forever",
-    description: "Start your journey to organized calm",
+    description: "Discover your team's superpowers without the stress",
     features: [
-      "5 peaceful lists to begin with",
-      "Simple task management",
-      "Basic sharing with others",
-      "Gentle progress tracking"
+      "5 magical lists to start your journey",
+      "Basic automation spells ✨",
+      "Share magic links with your crew",
+      "Zen-like focus features",
+      "Make work less worky"
     ],
-    cta: "Begin Free",
+    cta: "Start the Magic",
     popular: false
   },
   {
-    name: "Focus",
+    name: "Pro Magic",
     price: "$7",
     period: "per month",
-    description: "Complete focus tools for daily clarity",
+    description: "Supercharge your team while staying zen",
     features: [
-      "Unlimited calming lists",
-      "Advanced task automation",
-      "Priority visual organization",
-      "Peaceful collaboration tools",
-      "Zen progress insights",
-      "Dedicated support"
+      "Unlimited magical lists",
+      "Advanced automation powers ✨",
+      "Team coordination superpowers",
+      "ADHD-friendly focus tools",
+      "Peaceful productivity insights",
+      "Priority magical support"
     ],
-    cta: "Find Your Focus",
+    cta: "Unlock Pro Magic",
     popular: true
   },
   {
-    name: "Nirvana",
+    name: "Agent Magic",
     price: "$20",
     period: "per month", 
-    description: "AI-powered serenity for complex workflows",
+    description: "AI-powered team nirvana for complex workflows",
     features: [
-      "Everything in Focus",
-      "AI email processing",
+      "Everything in Pro Magic",
+      "AI email processing magic",
       "CRM integrations (Attio, Hubspot, Salesforce)",
-      "Automated task creation",
-      "Advanced analytics",
-      "Priority support"
+      "Automated task creation spells",
+      "Advanced zen analytics",
+      "Dedicated magical agent support"
     ],
-    cta: "Achieve Nirvana",
+    cta: "Achieve Team Nirvana",
     popular: false
   }
 ];
@@ -62,13 +63,13 @@ export default function PricingSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl md:text-5xl font-light text-slate-800 mb-6">
-            Choose Your Path to{" "}
+            Choose Your{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text font-medium">
-              Clarity
+              Magic Level ✨
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-            Simple pricing for minds that need simple solutions.
+            Supercharge your team's productivity without the overwhelm. Simple pricing for powerful results.
           </p>
         </motion.div>
         
