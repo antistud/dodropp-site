@@ -4,14 +4,14 @@ const features = [
   {
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m21.4 15-2.1-2.1m-3.3-3.2-2.1-2.2m-3.3-3.2-2.1-2.1M3.8 3.8l16.4 16.4"/><path d="m17.7 17.7-2.1-2.1m-3.3-3.3-2.2-2.1m-3.2-3.3-2.1-2.1M18.2 6.2l-1.4-1.4m-3.3-3.3 2.1 2.1"/></svg>,
     title: "Magic Automation Powers ✨",
-    description: "Tasks complete themselves like magic! Set it once, then watch your group's productivity soar while you stay zen.",
+    description: "Tasks complete themselves like magic! Set it once, then watch your productivity soar while you stay zen.",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600"
   },
   {
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>,
-    title: "Supercharged Sharing 🚀",
-    description: "One magical link connects your whole crew. No apps to download, no accounts needed - just instant group coordination.",
+    title: "Effortless Sharing 🚀",
+    description: "One magical link shares your progress with others. No apps to download, no accounts needed - just seamless coordination when you need it.",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600"
   },
@@ -42,7 +42,7 @@ export default function Features() {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-            Supercharge your group's productivity while keeping everyone calm, focused, and actually enjoying the process.
+            Supercharge your productivity while staying calm, focused, and actually enjoying what you do.
           </p>
         </motion.div>
         
@@ -86,7 +86,7 @@ export default function Features() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <p className="text-lg text-slate-500 font-light">
-            "Magical powers for groups that think differently"
+            "Magical powers for minds that think differently"
           </p>
         </motion.div>
       </div>

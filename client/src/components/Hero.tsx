@@ -4,48 +4,73 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto max-w-4xl">
-        <motion.div 
+        <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h1 className="text-4xl md:text-6xl font-light leading-relaxed text-slate-800 mb-8">
-            Unlock Your Crew's{" "}
+          <h1 className="text-3xl md:text-5xl font-light leading-relaxed text-slate-800 mb-8">
+            ✅{" "}
+            <span
+              style={{
+                textDecoration: "line-through",
+              }}
+            >
+              Unblock Your
+            </span>{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text font-medium">
               Magic Powers
             </span>
             <br />
-            <span className="text-3xl md:text-4xl">Without the Chaos ✨</span>
+            <span className="text-2xl md:text-3xl">
+               make planning effortless! ✨
+            </span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-12 font-light">
-            Supercharge your group projects while keeping your sanity intact. 
+            Supercharge your group projects while keeping your sanity intact.
             Make collaboration feel less worky, one peaceful task at a time.
           </p>
-          
-          <motion.div 
+
+          <motion.div
             className="mb-16"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <a 
-              href="https://app.dodropp.com/" 
+            <a
+              href="https://app.dodropp.com/"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m1 12 6 0m6 0 6 0"/></svg>
-              Discover Your Magic Powers
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 1v6m0 6v6" />
+                <path d="m1 12 6 0m6 0 6 0" />
+              </svg>
+              Unlock Your Focus
             </a>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="text-center text-slate-500"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <p className="text-lg font-light">No overwhelm. No chaos. Just clarity.</p>
+            <p className="text-lg font-light">
+              No overwhelm. No chaos. Just clarity.
+            </p>
           </motion.div>
         </motion.div>
       </div>

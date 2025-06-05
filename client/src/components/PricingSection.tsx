@@ -6,7 +6,7 @@ const plans = [
     name: "Free Magic",
     price: "$0",
     period: "forever",
-    description: "Discover your group's superpowers without the stress",
+    description: "Discover your personal superpowers without the stress",
     features: [
       "5 magical lists to start your journey",
       "Basic automation spells ✨",
@@ -21,11 +21,11 @@ const plans = [
     name: "Pro Magic",
     price: "$7",
     period: "per month",
-    description: "Supercharge your crew while staying zen",
+    description: "Supercharge your productivity while staying zen",
     features: [
       "Unlimited magical lists",
       "Advanced automation powers ✨",
-      "Group coordination superpowers",
+      "Seamless coordination when needed",
       "ADHD-friendly focus tools",
       "Peaceful productivity insights",
       "Priority magical support"
@@ -37,7 +37,7 @@ const plans = [
     name: "Agent Magic",
     price: "$20",
     period: "per month", 
-    description: "AI-powered group nirvana for complex workflows",
+    description: "AI-powered personal nirvana for complex workflows",
     features: [
       "Everything in Pro Magic",
       "AI email processing magic",
@@ -46,7 +46,7 @@ const plans = [
       "Advanced zen analytics",
       "Dedicated magical agent support"
     ],
-    cta: "Achieve Group Nirvana",
+    cta: "Achieve Personal Nirvana",
     popular: false
   }
 ];
@@ -69,7 +69,7 @@ export default function PricingSection() {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
-            Supercharge your group's productivity without the overwhelm. Simple pricing for powerful results.
+            Supercharge your productivity without the overwhelm. Simple pricing for powerful results.
           </p>
         </motion.div>
         
