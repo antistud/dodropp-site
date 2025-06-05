@@ -2,37 +2,37 @@ import { motion } from "framer-motion";
 
 const showcaseItems = [
   {
-    image: "/attached_assets/IMG_8095_1749149027927.PNG",
+    image: "/src/assets/IMG_8095_1749149027927.PNG",
     title: "Multiple Lists, Zero Stress",
     description: "Organize different projects with beautiful progress tracking that keeps you motivated.",
     accent: "bg-emerald-500"
   },
   {
-    image: "/attached_assets/IMG_8097_1749149027927.PNG",
+    image: "/src/assets/IMG_8097_1749149027927.PNG",
     title: "Smart Task Management", 
     description: "Intelligent task organization with tags, subtasks, and completion tracking that adapts to how you work.",
     accent: "bg-purple-500"
   },
   {
-    image: "/attached_assets/IMG_8093_1749149027927.PNG",
+    image: "/src/assets/IMG_8093_1749149027927.PNG",
     title: "Focus Timer Magic",
     description: "Built-in focus sessions that help ADHD minds stay on track without feeling overwhelmed.",
     accent: "bg-indigo-500"
   },
   {
-    image: "/attached_assets/IMG_8098_1749149027927.PNG",
+    image: "/src/assets/IMG_8098_1749149027927.PNG",
     title: "AI Task Generation",
     description: "Generate tasks from templates or create custom workflows that match your unique thinking style.",
     accent: "bg-pink-500"
   },
   {
-    image: "/attached_assets/IMG_8100_1749149027927.PNG",
+    image: "/src/assets/IMG_8100_1749149027927.PNG",
     title: "Effortless Sharing",
     description: "Share your progress with one magical link - no apps to download, no complex setups.",
     accent: "bg-blue-500"
   },
   {
-    image: "/attached_assets/IMG_8094_1749149027927.PNG",
+    image: "/src/assets/task_page.PNG",
     title: "Detailed Task Views",
     description: "Rich task details with subtasks, photos, and time tracking that grow with your needs.",
     accent: "bg-orange-500"
