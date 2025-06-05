@@ -1,47 +1,41 @@
 import { motion } from "framer-motion";
-import img1 from "@assets/IMG_8095_1749149027927.PNG";
-import img2 from "@assets/IMG_8097_1749149027927.PNG";
-import img3 from "@assets/IMG_8093_1749149027927.PNG";
-import img4 from "@assets/IMG_8098_1749149027927.PNG";
-import img5 from "@assets/IMG_8100_1749149027927.PNG";
-import img6 from "@assets/IMG_8094_1749149027927.PNG";
 
 const showcaseItems = [
   {
-    image: img1,
     title: "Multiple Lists, Zero Stress",
     description: "Organize different projects with beautiful progress tracking that keeps you motivated.",
-    accent: "bg-emerald-500"
+    accent: "bg-emerald-500",
+    icon: "📋"
   },
   {
-    image: img2,
-    title: "Smart Task Management",
+    title: "Smart Task Management", 
     description: "Intelligent task organization with tags, subtasks, and completion tracking that adapts to how you work.",
-    accent: "bg-purple-500"
+    accent: "bg-purple-500",
+    icon: "🎯"
   },
   {
-    image: img3,
     title: "Focus Timer Magic",
     description: "Built-in focus sessions that help ADHD minds stay on track without feeling overwhelmed.",
-    accent: "bg-indigo-500"
+    accent: "bg-indigo-500",
+    icon: "⏰"
   },
   {
-    image: img4,
     title: "AI Task Generation",
     description: "Generate tasks from templates or create custom workflows that match your unique thinking style.",
-    accent: "bg-pink-500"
+    accent: "bg-pink-500",
+    icon: "🤖"
   },
   {
-    image: img5,
     title: "Effortless Sharing",
     description: "Share your progress with one magical link - no apps to download, no complex setups.",
-    accent: "bg-blue-500"
+    accent: "bg-blue-500",
+    icon: "🔗"
   },
   {
-    image: img6,
     title: "Detailed Task Views",
     description: "Rich task details with subtasks, photos, and time tracking that grow with your needs.",
-    accent: "bg-orange-500"
+    accent: "bg-orange-500",
+    icon: "📝"
   }
 ];
 
@@ -72,24 +66,19 @@ export default function ProductShowcase() {
           {showcaseItems.map((item, index) => (
             <motion.div 
               key={index}
-              className="group relative"
+              className="group relative p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-300 bg-white"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -10, transition: { type: "spring", stiffness: 300 } }}
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-white font-medium text-lg mb-2">{item.title}</h3>
-                  <p className="text-white/90 text-sm font-light">{item.description}</p>
+              <div className="text-center">
+                <div className={`w-20 h-20 ${item.accent} rounded-full flex items-center justify-center mx-auto mb-6 text-3xl`}>
+                  {item.icon}
                 </div>
+                <h3 className="text-xl font-medium text-slate-800 mb-4">{item.title}</h3>
+                <p className="text-slate-600 leading-relaxed font-light">{item.description}</p>
               </div>
               <div className={`absolute -top-3 -right-3 w-6 h-6 ${item.accent} rounded-full animate-pulse`} />
             </motion.div>

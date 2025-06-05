@@ -1,13 +1,8 @@
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import HowItWorks from "@/components/HowItWorks";
-import BrandsBar from "@/components/BrandsBar";
-import Testimonials from "@/components/Testimonials";
-import UseCases from "@/components/UseCases";
+import ProductShowcase from "@/components/ProductShowcase";
 import PricingSection from "@/components/PricingSection";
-import Faq from "@/components/Faq";
 import CallToAction from "@/components/CallToAction";
-import NewsletterForm from "@/components/NewsletterForm";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -20,6 +15,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Hero />
       <Features />
+      <ProductShowcase />
       <PricingSection />
       <CallToAction />
     </main>
