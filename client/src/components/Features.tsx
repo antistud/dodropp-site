@@ -2,130 +2,92 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>,
-    title: "Magic Share Links ✨",
-    description: "One click and your checklist is shareable with friends! No sign-ups needed for your squad to see what's up.",
-    bgColor: "bg-primary/20",
-    iconColor: "text-primary"
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m1 12 6 0m6 0 6 0"/></svg>,
+    title: "One Thing at a Time",
+    description: "Break overwhelming tasks into peaceful, manageable steps that feel achievable.",
+    bgColor: "bg-slate-50",
+    iconColor: "text-indigo-600"
   },
   {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="10" x="3" y="11" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" x2="8" y1="16" y2="16"/><line x1="16" x2="16" y1="16" y2="16"/></svg>,
-    title: "Tasks That Do Themselves! 🤖",
-    description: "Make your checklist items complete themselves with powerful automation rules. Set it once, then sit back and relax!",
-    bgColor: "bg-secondary/20",
-    iconColor: "text-secondary"
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>,
+    title: "Visual Organization",
+    description: "See your progress clearly with calm, uncluttered layouts designed for focus.",
+    bgColor: "bg-slate-50",
+    iconColor: "text-purple-600"
   },
   {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 8h.01M12 3c-1.86 0-3.2.11-4.03.43a4.5 4.5 0 0 0-2.53 2.53C5.1 6.8 5 8.14 5 10c0 1.86.11 3.2.43 4.03a4.5 4.5 0 0 0 2.53 2.53c.83.33 2.17.44 4.03.44 1.86 0 3.2-.11 4.03-.43a4.5 4.5 0 0 0 2.53-2.53c.33-.83.44-2.17.44-4.03 0-1.86-.11-3.2-.43-4.03a4.5 4.5 0 0 0-2.53-2.53C15.2 3.11 13.86 3 12 3z"/><path d="M19 15v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-2"/><path d="M12 16v3"/><path d="m9 18 3 3 3-3"/></svg>,
-    title: "Snap & Share Photos! 📸",
-    description: "Add photos to your tasks to show exactly what you need or capture completed tasks with visual proof!",
-    bgColor: "bg-blue-100",
-    iconColor: "text-blue-500"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2H2v10h10V2Z"/><path d="M22 12h-10v10h10V12Z"/><path d="M12 12H2v10h10V12Z"/><path d="M22 2h-10v10h10V2Z"/></svg>,
-    title: "Lists for Everything! 📝",
-    description: "Separate lists for your soccer team, party planning, game night, weekend trips - all in one place!",
-    bgColor: "bg-accent/20",
-    iconColor: "text-accent-foreground"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H4"/><path d="M14 2v6h6"/><path d="M10 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1"/><path d="M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1"/></svg>,
-    title: "Custom Text Responses! 💬",
-    description: "Create text input tasks that collect responses from your group - perfect for gathering ideas or preferences!",
-    bgColor: "bg-violet-100",
-    iconColor: "text-violet-500"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m21.4 15-2.1-2.1m-3.3-3.2-2.1-2.2m-3.3-3.2-2.1-2.1M3.8 3.8l16.4 16.4" /><path d="m17.7 17.7-2.1-2.1m-3.3-3.3-2.2-2.1m-3.2-3.3-2.1-2.1M18.2 6.2l-1.4-1.4m-3.3-3.3 2.1 2.1" /></svg>,
-    title: "Smart Tagging System 🏷️",
-    description: "Tag things like #MovieNight or #BeachTrip to find all your related tasks super fast!",
-    bgColor: "bg-pink-100",
-    iconColor: "text-pink-500"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/><path d="m5 15-3 3 3 3"/><path d="m19 15 3 3-3 3"/><path d="m3 7 3-3 3 3"/><path d="m15 7 3-3 3 3"/></svg>,
-    title: "File Upload Tasks! 📁",
-    description: "Share documents, spreadsheets, and files right within your tasks - great for event planning or group projects!",
-    bgColor: "bg-amber-100",
-    iconColor: "text-amber-500"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>,
-    title: "See Your Progress! 📈",
-    description: "Watch your group's to-do list shrink with interactive tracking features - perfect for roommates splitting chores!",
-    bgColor: "bg-green-100",
-    iconColor: "text-green-500"
-  },
-  {
-    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>,
-    title: "Friendly Reminders! 🔔",
-    description: "DoDropp nudges you about upcoming deadlines so your camping trip planning doesn't fall behind!",
-    bgColor: "bg-purple-100",
-    iconColor: "text-primary"
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect width="4" height="4" x="10" y="21"/><path d="M12 17v4"/><path d="M8 21l8 0"/></svg>,
+    title: "Gentle Automation",
+    description: "Let tasks complete themselves quietly in the background while you maintain your flow.",
+    bgColor: "bg-slate-50",
+    iconColor: "text-emerald-600"
   }
 ];
 
-// Animation variants for staggered animations
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5 }
-  }
-};
-
 export default function Features() {
   return (
-    <section id="features" className="py-20 px-6 bg-gradient-to-b from-white to-purple-50">
-      <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Powerful Features <br />Without the Complexity!
-          </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            DoDropp makes checklists effective - perfect for friend groups, party planning, trips, and everyday adventures!
-          </p>
-        </div>
-        
+    <section className="py-20 px-6 bg-white">
+      <div className="container mx-auto max-w-6xl">
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
         >
+          <h2 className="text-3xl md:text-5xl font-light text-slate-800 mb-6">
+            Designed for Your{" "}
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text font-medium">
+              Peace of Mind
+            </span>
+          </h2>
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light">
+            Every feature thoughtfully crafted to reduce overwhelm and enhance clarity.
+          </p>
+        </motion.div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <motion.div 
               key={index}
-              className="p-6 rounded-xl border-2 border-primary/20 bg-white shadow-md hover:shadow-xl transition"
-              variants={itemVariants}
-              whileHover={{ 
-                y: -8, 
-                rotate: Math.random() > 0.5 ? 1 : -1,
-                transition: { type: "spring", stiffness: 300 }
-              }}
+              className="text-center p-8 rounded-2xl border border-slate-100 hover:border-slate-200 transition-all duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ y: -5, transition: { type: "spring", stiffness: 300 } }}
             >
-              <div className={`w-14 h-14 ${feature.bgColor} rounded-xl flex items-center justify-center mb-4`}>
-                <span className={`${feature.iconColor} text-2xl`}>{feature.icon}</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">
+              <motion.div 
+                className={`w-16 h-16 ${feature.bgColor} rounded-full flex items-center justify-center mx-auto mb-6`}
+                whileHover={{ scale: 1.1, rotate: 5 }}
+                transition={{ type: "spring", stiffness: 400 }}
+              >
+                <div className={feature.iconColor}>
+                  {feature.icon}
+                </div>
+              </motion.div>
+              
+              <h3 className="text-xl font-medium text-slate-800 mb-4">
+                {feature.title}
+              </h3>
+              
+              <p className="text-slate-600 leading-relaxed font-light">
                 {feature.description}
               </p>
             </motion.div>
           ))}
+        </div>
+        
+        <motion.div 
+          className="text-center mt-16"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <p className="text-lg text-slate-500 font-light">
+            "Simple tools for complex minds"
+          </p>
         </motion.div>
       </div>
     </section>

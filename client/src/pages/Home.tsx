@@ -17,17 +17,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-white">
       <Hero />
-      <BrandsBar />
       <Features />
-      <HowItWorks />
-      <Testimonials />
-      <UseCases />
       <PricingSection />
-      <Faq />
       <CallToAction />
-      <NewsletterForm />
     </main>
   );
 }
