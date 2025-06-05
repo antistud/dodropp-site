@@ -11,7 +11,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="text-4xl md:text-6xl font-light leading-relaxed text-slate-800 mb-8">
-            Unlock Your Team's{" "}
+            Unlock Your Crew's{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text font-medium">
               Magic Powers
             </span>
@@ -21,7 +21,7 @@ export default function Hero() {
           
           <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-12 font-light">
             Supercharge your group projects while keeping your sanity intact. 
-            Make work feel less worky, one peaceful task at a time.
+            Make collaboration feel less worky, one peaceful task at a time.
           </p>
           
           <motion.div 
