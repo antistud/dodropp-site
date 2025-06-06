@@ -16,7 +16,7 @@ export default function Hero() {
               Magic Powers
             </span>
             <br />
-            <span className="text-3xl md:text-4xl">Remove the Chaos ✨</span>
+            
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-4 font-light">
