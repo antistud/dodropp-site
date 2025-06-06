@@ -46,7 +46,7 @@ export default function Hero() {
             >
               <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
                 <img 
-                  src="/src/assets/my_lists_cards.PNG" 
+                  src="/images/my_lists_cards.PNG" 
                   alt="DoDropp lists overview showing multiple organized projects" 
                   className="w-full h-full object-cover object-top"
                 />
@@ -63,7 +63,7 @@ export default function Hero() {
             >
               <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
                 <img 
-                  src="/src/assets/list_page.PNG" 
+                  src="/images/list_page.PNG" 
                   alt="DoDropp task management with smart organization" 
                   className="w-full h-full object-cover object-top"
                 />
@@ -80,7 +80,7 @@ export default function Hero() {
             >
               <div className="aspect-[4/5] overflow-hidden rounded-2xl shadow-xl border-4 border-white/50 group-hover:shadow-2xl transition-all duration-300">
                 <img 
-                  src="/src/assets/focus_timer.PNG" 
+                  src="/images/focus_timer.PNG" 
                   alt="DoDropp focus timer for ADHD-friendly work sessions" 
                   className="w-full h-full object-cover object-top"
                 />

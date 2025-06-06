@@ -1,7 +1,4 @@
 import { motion } from "framer-motion";
-import taskGenerator from "@/assets/task_generator.PNG";
-import shareLists from "@/assets/share_lists.PNG";
-import focusTimer from "@/assets/focus_timer.PNG";
 
 const features = [
   {
@@ -63,7 +60,7 @@ export default function Features() {
               {index === 0 && (
                 <div className="absolute top-4 right-4 opacity-10">
                   <img 
-                    src={taskGenerator} 
+                    src="/images/task_generator.PNG" 
                     alt="Task generator interface" 
                     className="w-20 h-20 rounded-lg object-cover"
                   />
@@ -72,7 +69,7 @@ export default function Features() {
               {index === 1 && (
                 <div className="absolute top-4 right-4 opacity-10">
                   <img 
-                    src={shareLists} 
+                    src="/images/share_lists.PNG" 
                     alt="Share functionality interface" 
                     className="w-20 h-20 rounded-lg object-cover"
                   />
@@ -81,7 +78,7 @@ export default function Features() {
               {index === 2 && (
                 <div className="absolute top-4 right-4 opacity-10">
                   <img 
-                    src={focusTimer} 
+                    src="/images/focus_timer.PNG" 
                     alt="Focus timer interface" 
                     className="w-20 h-20 rounded-lg object-cover"
                   />
