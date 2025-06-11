@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { trackCTAClick } from "@/lib/analytics";
 
 export default function CallToAction() {
   return (

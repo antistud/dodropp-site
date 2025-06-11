@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { trackCTAClick } from "@/lib/analytics";
 
 const showcaseItems = [
   {
@@ -119,6 +120,7 @@ export default function ProductShowcase() {
             className="inline-flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium hover:shadow-xl hover:scale-105 transition-all duration-300"
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => trackCTAClick('product_showcase')}
           >
             Try It Free - See Your Own Magic
           </motion.a>

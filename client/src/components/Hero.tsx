@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { trackCTAClick } from "@/lib/analytics";
 
 export default function Hero() {
   return (
@@ -100,6 +101,7 @@ export default function Hero() {
             <a
               href="https://app.dodropp.com/"
               className="inline-flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium text-base sm:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              onClick={() => trackCTAClick('hero')}
             >
               🎯 Unlock Your Focus
             </a>
